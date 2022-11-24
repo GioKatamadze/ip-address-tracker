@@ -10,3 +10,20 @@ code {
   font-family: 'Rubik', sans-serif;
 }
 
+.Background {
+  object-fit: cover;
+  width: 100vw;
+  height: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+  .Background {
+    height: 300px;
+  }
+}
+
+
+
+
+
+
