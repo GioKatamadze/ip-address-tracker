@@ -2,8 +2,6 @@
 
 ![Design preview for the IP Address Tracker](./design/desktop-design.jpg)
 
-This is a solution to the [IP Address Tracker](https://www.frontendmentor.io/challenges/launch-countdown-timer-N0XkGfyz-).
-
 ## Table of contents
 
 - [Overview](#overview)
