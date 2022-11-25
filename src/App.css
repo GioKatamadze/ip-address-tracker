@@ -10,16 +10,116 @@ code {
   font-family: 'Rubik', sans-serif;
 }
 
-.Background {
-  object-fit: cover;
+.background {
+  background-image: url(./images/pattern-bg.png);
+  object-fit:  cover;
   width: 100vw;
   height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .Background {
+h1 {
+  font-family: 'Rubik', sans-serif;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 10px rgba(0, 0, 0, 0.8);
+}
+
+.inputBar {
+  width: 70vw;
+  max-width: 400px;
+  height: 50px;
+  padding-left: 20px;
+  border: 0 solid white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: 'Rubik', sans-serif;
+  color: black;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.inputBar:hover {
+  cursor: pointer;
+}
+
+.inputBar::placeholder {
+  color: rgb(30, 30, 30);
+  font-size: 15px;
+  opacity: .8;
+}
+
+.inputButton {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 0 solid white;
+  width: 53px;
+  height: 53px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .1s;
+}
+
+.inputButton:hover {
+  cursor: pointer;
+  background-color: rgb(59, 59, 59);
+}
+
+
+
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.inputBox {
+  height: 50px;
+  width: 500px;
+  background-color: white;
+}
+
+
+
+
+@media only screen and (min-width: 700px) {
+  .background {
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 300px;
   }
+
+  h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+
+  form {
+    margin-top: 35px;
+  }
+
+  .inputBar {
+    width: 400px;
+  }
+
+  .inputButton {
+    width: 53px;
+  }
+
+
 }
 
 
