@@ -1,9 +1,13 @@
 import './reset.css';
 import './App.css';
-import arrow from './images/icon-arrow.svg'
+import arrow from './images/icon-arrow.svg';
+import 'leaflet/dist/leaflet.css';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import icon from './icon';
 
 // https://geo.ipify.org/api/v2/country,city?apiKey=at_c0XRjdWW9XdRj5WOWrHPcbxWMm9n3&ipAddress=8.8.8.8
 
+const position = [51.505, -0.09];
 
 function App() {
   return (
@@ -62,6 +66,21 @@ function App() {
               <h2 className='displayValue' >SpaseX Starlink</h2>
             </div>
 
+          </div>
+
+          
+          <div className='map' style={{width: '100vw' }}>
+          <MapContainer style={{ height: '500px' }} center={position} zoom={13} scrollWheelZoom={false}>
+            <TileLayer
+              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+            />
+            <Marker icon={icon} position={position}>
+              <Popup>
+                Location
+              </Popup>
+            </Marker>
+          </MapContainer>
           </div>
 
       </div>
