@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Code](https://github.com/GioKatamadze/Tic-Tac-Toe)
-- Live Site URL: [GitHub LIve](https://giokatamadze.github.io/Tic-Tac-Toe//)
+- Solution URL: [GitHub Code](https://github.com/GioKatamadze/ip-address-tracker)
+- Live Site URL: [Netlify Live](https://gleaming-entremet-84bd7a.netlify.app/)
 
 ## My process
 
